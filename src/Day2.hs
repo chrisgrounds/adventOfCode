@@ -21,7 +21,7 @@ day2 = do
     fileData2 <- readFile "input2.txt"
     let data2 = lines fileData2
     
-    let allChecksums = unzip $ fmap checksum data2
+    let allChecksums  = unzip $ fmap checksum data2
     let totalChecksum = (length . keepTrue . fst $ allChecksums) * (length . keepTrue . snd $ allChecksums)
     print totalChecksum
 

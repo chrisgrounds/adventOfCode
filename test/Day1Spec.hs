@@ -12,5 +12,5 @@ spec = do
         it "returns 0 when given [+1, +1, -2]" $ do
             part1 ["+1", "+1", "-2"] `shouldBe` 0
 
-        it "returns 3 when given [-1, -2, -3]" $ do
+        it "returns -6 when given [-1, -2, -3]" $ do
             part1 ["-1", "-2", "-3"] `shouldBe` (-6)

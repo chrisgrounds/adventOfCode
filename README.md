@@ -1,4 +1,4 @@
-# adventOfCode 
+# Advent of Code 
 
 ## Years
 

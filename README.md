@@ -4,3 +4,9 @@
 
 - 2018
 
+## Build & Run
+
+```
+stack build
+stack exec -- advent
+```

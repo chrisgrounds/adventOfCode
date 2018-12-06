@@ -28,13 +28,16 @@ loopUntilDupFound Nothing rules freqs c = loopUntilDupFound (getFirstDupe newFre
         rightFrequencies     = scanl' (flip changeFrequency) (last freqs) rules
         newFrequencies       = getNewFreqs freqs rules
 
+part1 :: [String] -> Frequency
+part1 = foldr changeFrequency 0
+
+part2 input = loopUntilDupFound Nothing input [] 0
+
 day1 = do
     fileData1 <- readFile "input1.txt"
-    let data1 = lines fileData1
+    let inputData = lines fileData1
     
-    -- part 1
-    print $ foldr changeFrequency 0 data1
+    print $ part1 inputData
 
-    -- part 2
-    print $ loopUntilDupFound Nothing data1 [] 0
+    print $ part2 inputData
 

@@ -7,14 +7,17 @@ import qualified Y2018.Day1 as Y2018
 import qualified Y2018.Day2 as Y2018
 -- 2019
 import qualified Y2019.Day1 as Y2019
+import qualified Y2019.Day2 as Y2019
 
 main :: IO ()
 main = do
     -- Load files
     moduleMass <- readFile "./data/2019/moduleMass.txt"
+    opcodes <- readFile "./data/2019/opcodes.txt"
 
     -- Run code
     -- Y2018.day1
     -- Y2018.day2
 
     print $ Y2019.day1 (lines moduleMass)
+    print $ Y2019.day2 opcodes

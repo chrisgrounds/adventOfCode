@@ -1,4 +1,4 @@
-module Day1 where
+module Y2018.Day1 where
 
 import Data.List (lines, scanl')
 
@@ -34,7 +34,7 @@ part1 = foldr changeFrequency 0
 part2 input = loopUntilDupFound Nothing input [] 0
 
 day1 = do
-    fileData1 <- readFile "input1.txt"
+    fileData1 <- readFile "2018/input1.txt"
     let inputData = lines fileData1
     
     print $ part1 inputData

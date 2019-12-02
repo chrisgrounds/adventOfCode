@@ -34,7 +34,7 @@ part1 = foldr changeFrequency 0
 part2 input = loopUntilDupFound Nothing input [] 0
 
 day1 = do
-    fileData1 <- readFile "2018/input1.txt"
+    fileData1 <- readFile "./data/2018/input1.txt"
     let inputData = lines fileData1
     
     print $ part1 inputData

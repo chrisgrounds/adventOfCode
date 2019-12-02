@@ -18,7 +18,7 @@ keepTrue     = filter (\x -> x == True)
 alphabet     = ['a'..'z']
 
 day2 = do
-    fileData2 <- readFile "2018/input2.txt"
+    fileData2 <- readFile "./data/2018/input2.txt"
     let inputData = lines fileData2
     
     let allChecksums  = unzip $ fmap checksum inputData

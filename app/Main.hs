@@ -17,4 +17,4 @@ main = do
     -- Y2018.day1
     -- Y2018.day2
 
-    print =<< Y2019.day1 (lines moduleMass)
+    print $ Y2019.day1 (lines moduleMass)

@@ -20,8 +20,8 @@ fuelFromMassIncludingFuel f = go f 0
             else acc
 
 part1, part2 :: [String] -> Int
-part1 x = sum $ fuelFromMass . toFloat <$> x
-part2 x = sum $ fuelFromMassIncludingFuel . toFloat <$> x
+part1 = sum . fmap (fuelFromMass . toFloat)
+part2 = sum . fmap (fuelFromMassIncludingFuel . toFloat)
 
 day1 :: [String] -> (Int, Int)
 day1 modules = (part1 modules, part2 modules)
